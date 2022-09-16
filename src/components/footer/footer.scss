@@ -11,8 +11,10 @@
     max-width: 1000px;
 
     &__logo {
-      @include flex(center, center);
+      // @include flex(center, center);
       margin-bottom: 3rem;
+      width: 50%;
+      height: 50%;
     }
 
     &__menus {

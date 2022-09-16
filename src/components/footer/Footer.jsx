@@ -4,7 +4,7 @@ import "./footer.scss";
 import { Link } from "react-router-dom";
 
 import bg from "../../assets/footer-bg.jpg";
-import logo from "../../assets/react-movie-logo.svg";
+import logo2 from "../../assets/tmdb_logo.svg";
 
 export default function Footer() {
   return (
@@ -13,7 +13,7 @@ export default function Footer() {
         <div className="footer__content__logo">
           <div className="logo">
             <Link to="/">
-              <img src={logo} alt="" />
+              <img src={logo2} alt="" />
             </Link>
           </div>
         </div>
@@ -28,7 +28,7 @@ export default function Footer() {
             <Link to="/">Live</Link>
             <Link to="/">FAQ</Link>
             <Link to="/">Premium</Link>
-            <Link to="/">Pravacy policy</Link>
+            <Link to="/">Privacy policy</Link>
           </div>
           <div className="footer__content__menu">
             <Link to="/">You must watch</Link>
