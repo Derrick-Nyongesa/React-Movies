@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { SwiperSlide, Swiper } from "swiper/react";
 import PropTypes from "prop-types";
 import tmdbApi, { category } from "../../api/tmdbApi";
+import MovieCard from "../movie-card/MovieCard";
 
 export default function MovieList(props) {
   const [items, setItems] = useState([]);
