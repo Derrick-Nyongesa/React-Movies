@@ -9,8 +9,6 @@ import { Swiper } from "swiper/react";
 import Button, { OutlineButton } from "../button/Button";
 import Modal, { ModalContent } from "../modal/Modal";
 import { useNavigate } from "react-router-dom";
-import { Splide, SplideSlide } from "@splidejs/react-splide";
-import "@splidejs/splide/dist/css/splide.min.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
