@@ -1,21 +1,21 @@
 @use "../../scss/" as *;
 
-.logo {
-  font-size: 2.5rem;
-  font-weight: 600;
+// .logo {
+//   font-size: 2.5rem;
+//   font-weight: 600;
 
-  @include flex(center, unset);
+//   @include flex(center, unset);
 
-  img {
-    margin-right: 10px;
-    width: 50px;
+//   img {
+//     margin-right: 10px;
+//     width: 50px;
 
-    @include mobile {
-      width: 30px;
-      margin-right: 0;
-    }
-  }
-}
+//     @include mobile {
+//       width: 30px;
+//       margin-right: 0;
+//     }
+//   }
+// }
 
 .header {
   height: $header-height;

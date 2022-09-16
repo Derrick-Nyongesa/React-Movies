@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.scss";
-import logo from "../../assets/tmovie.png";
+import logo from "../../assets/react-movie-logo.svg";
 import { Link, useLocation } from "react-router-dom";
 import { useRef } from "react";
 import { useEffect } from "react";
@@ -46,8 +46,9 @@ export default function Header() {
     <div ref={headerRef} className="header">
       <div className="header__wrap container">
         <div className="logo">
-          <img src={logo} alt="" />
-          <Link to="/">tMovies</Link>
+          <Link to="/">
+            <img src={logo} alt="" />
+          </Link>
         </div>
         <ul className="header__nav">
           {headerNav.map((e, i) => (
