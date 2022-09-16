@@ -11,6 +11,9 @@ import Modal, { ModalContent } from "../modal/Modal";
 import { useNavigate } from "react-router-dom";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/splide/dist/css/splide.min.css";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
 
 export default function HeroSlide() {
   SwiperCore.use([Autoplay]);
@@ -35,10 +38,11 @@ export default function HeroSlide() {
   return (
     <div className="hero-slide">
       <Swiper
-        modules={[Autoplay]}
         grabCursor={true}
         spaceBetween={0}
         slidesPerView={1}
+        navigation={true}
+        modules={[Navigation]}
         // autoplay={{delay: 3000}}
       >
         {movieItems.map((item, i) => (
@@ -96,7 +100,7 @@ const HeroSlideItem = (props) => {
           <div className="overview">{item.overview}</div>
           <div className="btns">
             <Button onClick={() => hisrory("/movie/" + item.id)}>
-              Watch now
+              View Details
             </Button>
             <OutlineButton onClick={setModalActive}>
               Watch trailer

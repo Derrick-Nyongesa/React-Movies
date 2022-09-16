@@ -5,6 +5,9 @@ import { SwiperSlide, Swiper } from "swiper/react";
 import PropTypes from "prop-types";
 import tmdbApi, { category } from "../../api/tmdbApi";
 import MovieCard from "../movie-card/MovieCard";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
 
 export default function MovieList(props) {
   const [items, setItems] = useState([]);
@@ -32,7 +35,13 @@ export default function MovieList(props) {
 
   return (
     <div className="movie-list">
-      <Swiper grabCursor={true} spaceBetween={10} slidesPerView={"auto"}>
+      <Swiper
+        grabCursor={true}
+        spaceBetween={10}
+        slidesPerView={"auto"}
+        navigation={true}
+        modules={[Navigation]}
+      >
         {items.map((item, i) => (
           <SwiperSlide key={i}>
             <MovieCard item={item} category={props.category} />
