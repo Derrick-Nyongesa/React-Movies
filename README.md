@@ -1,6 +1,9 @@
 # React-Movies Application
 
 ![developer](https://img.shields.io/badge/Developer-Derrick%20Daniel%20Nyongesa-blue)
+
+#
+
 This is a movie review website using React. The web application will allow a user to find any movie in the database using an API from TMDB.
 
 ## Development server
